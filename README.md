@@ -15,12 +15,18 @@ This project implements a diffusion MRI preprocessing pipeline for mouse brain d
 
 The FA maps look reasonably consistent across methods, although some noise and blurring remain.
 
+## Additional Test: Gibbs Ringing Correction
+
+I evaluated the effect of `mrdegibbs` using different axis configurations (0,1), (1,2), and (0,2).
+
+Results:
+- DWI and FA maps were visually similar across all three configurations
+- Suggesting that axis selection is not a major factor for this dataset
+
 ## Next Steps
 
-- Apply mrdegibbs at the DWI stage  
-- Compare results across axes  
 - Improve preprocessing to reduce noise and artifacts  
 
 ## Notes
 
-This pipeline is developed based on guidance from Prof. Badea.
+This pipeline is developed based on guidance from Dr. Badea.
